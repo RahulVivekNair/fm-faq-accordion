@@ -27,7 +27,7 @@
     <img
       src="images/icon-arrow-down.svg"
       alt=""
-      class="h-3 w-4 transform transition-transform duration-300"
+      class="h-3 w-4 transform transition-transform duration-200"
       class:rotate-180="{isOpen}"
     />
   </div>

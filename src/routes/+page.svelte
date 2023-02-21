@@ -1,5 +1,33 @@
 <script>
   import Accordion from "../components/accordion.svelte";
+
+  const faqs = [
+    {
+      question: "How many team members can I invite?",
+      answer:
+        "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+    },
+    {
+      question: "What is the maximum file upload size?",
+      answer:
+        "No more than 2GB. All files in your account must fit your allotted storage space.",
+    },
+    {
+      question: "How do I reset my password?",
+      answer:
+        "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
+    },
+    {
+      question: "Can I cancel my subscription?",
+      answer:
+        "Yes! Send us a message and we’ll process your request no questions asked.",
+    },
+    {
+      question: "Do you provide additional support?",
+      answer:
+        "Chat and email support is available 24/7. Phone lines are open during normal business hours.",
+    },
+  ];
 </script>
 
 <main
@@ -28,26 +56,9 @@
     </div>
     <div class=" lg:w-1/2 pr-16 py-20">
       <h1 class="text-center text-3xl font-bold lg:text-left">FAQ</h1>
-      <Accordion
-        question="How many team members can I invite?"
-        answer="You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."
-      />
-      <Accordion
-        question="What is the maximum file upload size?"
-        answer="No more than 2GB. All files in your account must fit your allotted storage space."
-      />
-      <Accordion
-        question="How do I reset my password?"
-        answer="Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you."
-      />
-      <Accordion
-        question="Can I cancel my subscription?"
-        answer="Yes! Send us a message and we’ll process your request no questions asked."
-      />
-      <Accordion
-        question="Do you provide additional support?"
-        answer="Chat and email support is available 24/7. Phone lines are open during normal business hours."
-      />
+      {#each faqs as { question, answer }, index}
+        <Accordion question="{question}" answer="{answer}" />
+      {/each}
     </div>
   </div>
 </main>
