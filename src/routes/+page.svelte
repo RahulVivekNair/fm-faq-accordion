@@ -1,3 +1,7 @@
+<script>
+  import Accordion from "../components/accordion.svelte";
+</script>
+
 <main
   class="min-h-screen bg-gradient-to-b from-softViolet to-softBlue flex justify-center items-center"
 >
@@ -24,66 +28,26 @@
     </div>
     <div class=" lg:w-1/2 pr-16 py-20">
       <h1 class="text-center text-3xl font-bold lg:text-left">FAQ</h1>
-      <div class="">
-        <div class="flex items-center justify-between">
-          <p>How many team members can I invite?</p>
-          <img src="images/icon-arrow-down.svg" alt="" class="h-3 w-4" />
-        </div>
-        <div class="">
-          <p>
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex items-center justify-between">
-          <p>What is the maximum file upload size?</p>
-          <img src="images/icon-arrow-down.svg" alt="" />
-        </div>
-        <div class="">
-          <p>
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex items-center justify-between">
-          <p>How do I reset my password?</p>
-          <img src="images/icon-arrow-down.svg" alt="" />
-        </div>
-        <div class="">
-          <p>
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex items-center justify-between">
-          <p>Can I cancel my subscription?</p>
-          <img src="images/icon-arrow-down.svg" alt="" />
-        </div>
-        <div class="">
-          <p>
-            Yes! Send us a message and we’ll process your request no questions
-            asked.
-          </p>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex items-center justify-between">
-          <p>Do you provide additional support?</p>
-          <img src="images/icon-arrow-down.svg" alt="" />
-        </div>
-        <div class="">
-          <p>
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
-        </div>
-      </div>
+      <Accordion
+        question="How many team members can I invite?"
+        answer="You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."
+      />
+      <Accordion
+        question="What is the maximum file upload size?"
+        answer="No more than 2GB. All files in your account must fit your allotted storage space."
+      />
+      <Accordion
+        question="How do I reset my password?"
+        answer="Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you."
+      />
+      <Accordion
+        question="Can I cancel my subscription?"
+        answer="Yes! Send us a message and we’ll process your request no questions asked."
+      />
+      <Accordion
+        question="Do you provide additional support?"
+        answer="Chat and email support is available 24/7. Phone lines are open during normal business hours."
+      />
     </div>
   </div>
 </main>
