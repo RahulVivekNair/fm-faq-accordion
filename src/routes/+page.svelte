@@ -2,7 +2,7 @@
   class="min-h-screen bg-gradient-to-b from-softViolet to-softBlue flex justify-center items-center"
 >
   <div
-    class="flex lg:flex-row flex-col max-w-screen-lg font-kumbh bg-white rounded-3xl mx-6 my-16"
+    class="flex items-center lg:flex-row flex-col max-w-screen-lg font-kumbh bg-white rounded-3xl mx-6 my-16"
   >
     <img
       class="hidden"
@@ -22,12 +22,12 @@
         />
       </picture>
     </div>
-    <div class=" lg:w-1/2">
+    <div class=" lg:w-1/2 pr-16 py-20">
       <h1 class="text-center text-3xl font-bold lg:text-left">FAQ</h1>
       <div class="">
-        <div class="">
+        <div class="flex items-center justify-between">
           <p>How many team members can I invite?</p>
-          <img src="images/icon-arrow-down.svg" alt="" />
+          <img src="images/icon-arrow-down.svg" alt="" class="h-3 w-4" />
         </div>
         <div class="">
           <p>
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="">
-        <div class="">
+        <div class="flex items-center justify-between">
           <p>What is the maximum file upload size?</p>
           <img src="images/icon-arrow-down.svg" alt="" />
         </div>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="">
-        <div class="">
+        <div class="flex items-center justify-between">
           <p>How do I reset my password?</p>
           <img src="images/icon-arrow-down.svg" alt="" />
         </div>
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="">
-        <div class="">
+        <div class="flex items-center justify-between">
           <p>Can I cancel my subscription?</p>
           <img src="images/icon-arrow-down.svg" alt="" />
         </div>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="">
-        <div class="">
+        <div class="flex items-center justify-between">
           <p>Do you provide additional support?</p>
           <img src="images/icon-arrow-down.svg" alt="" />
         </div>
